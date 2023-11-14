@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  font-family: Poppins, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* colors */
+    --color-app-primary: 263deg 46% 51%;
+    --color-app-secondary: 198deg 71% 53%;
+
+    /* fonts -colors */
+    --color-app-paragraph: 0deg 0% 40%;
+    --color-app-text: 0deg 0% 40%;
+    --color-app-link: 0deg 0% 0%;
+    --color-app-title: 237deg 25% 35%;
+
+    /* surfaces */
+    --color-app-background: 0deg 0% 100%;
+    --color-app-surface: 0deg 0% 100%;
+  }
+
+  :root[class="dark"] {
+    --color-app-primary: 192deg 26% 7%;
+    --color-app-secondary: 0deg 0% 0%;
+    --color-app-tertiary: 191deg 100% 27%;
+
+    /* fonts -colors */
+    --color-app--paragraph: 0deg 0% 40%;
+    --color-app--text: 0deg 0% 65%;
+    --color-app--link: 0deg 0% 100%;
+    --color-app--title: 0deg 0% 85%;
+
+    /* surfaces */
+    --color-app--background: 0deg 0% 10%;
+    --color-app--surface: 0deg 0% 40%;
+  }
+}

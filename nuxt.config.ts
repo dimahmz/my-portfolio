@@ -13,10 +13,15 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    ["@nuxtjs/google-fonts", { families: { Poppins: true } }],
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
         // @ts-expect-error
-        config.plugins.push(vuetify({ autoImport: true }));
+        config.plugins.push(
+          vuetify({
+            autoImport: true,
+          })
+        );
       });
     },
   ],
