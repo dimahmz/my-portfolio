@@ -1,6 +1,6 @@
 <template lang="pug">
 header.flex-center.px-4.py-2(class="sm:px-8 sm:py-4")
-  nav.flex-center-between.w-full(class="max-w-[1000px]")
+  nav.w-full.flex-center-between
     img(src="/images/hamza-logo.svg" alt="portfolio's logo")
     div.hidden(class="sm:flex justify-between sm:space-x-4 md:space-x-10 lg:space-x-14")
       router-link(v-for="(link , i) in links" :key="i" :to="link.location") {{link.title}}
