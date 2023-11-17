@@ -1,5 +1,5 @@
 <template lang="pug">
-section.section-wrapper.flex.flex-col-reverse.gap-y-8.px-8.mt-16
+section.section-wrapper.flex.flex-col-reverse.gap-y-8.px-8
   p.hero-text.w-full.text-app-title.font-black.text-lg
     | Hello, I'm Hamza
     br
