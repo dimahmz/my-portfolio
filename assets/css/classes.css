@@ -1,0 +1,10 @@
+.section-title {
+  @apply text-app-title text-xl font-bold;
+  @apply sm:text-2xl;
+  @apply md:text-3xl;
+}
+
+.section-sub-title {
+  @apply text-app-parag text-sm;
+  @apply md:text-base;
+}

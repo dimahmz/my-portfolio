@@ -4,4 +4,5 @@
     nav-bar
     sections-hero.mt-16
     sections-skills.mt-24
+    sections-projects.mt-24
 </template>

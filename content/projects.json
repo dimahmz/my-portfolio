@@ -1,0 +1,26 @@
+[
+  {
+    "title": "promodoro-app",
+    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
+    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
+    "url": "https://pro-focus.vercel.app",
+    "repoLink": "https://github.com/dimahmz/pro-focus",
+    "imgPath": "images/projects/pro-pomodoro.png"
+  },
+  {
+    "title": "promodoro-app",
+    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
+    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
+    "url": "https://pro-focus.vercel.app",
+    "repoLink": "https://github.com/dimahmz/pro-focus",
+    "imgPath": "images/projects/pro-pomodoro.png"
+  },
+  {
+    "title": "promodoro-app",
+    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
+    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
+    "url": "https://pro-focus.vercel.app",
+    "repoLink": "https://github.com/dimahmz/pro-focus",
+    "imgPath": "images/projects/pro-pomodoro.png"
+  }
+]
