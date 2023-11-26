@@ -2,11 +2,13 @@
 import { email } from "@/content/contact.json";
 import { ref } from "vue";
 
+const email_coppied = ref(false);
 const copyingMsg = (element: HTMLElement) => {
   element.setAttribute("title", "coppied");
-  console.log(element.getAttribute("title"));
+  email_coppied.value = true;
   setTimeout(() => {
     element.setAttribute("title", "Copy to clipboard");
+    email_coppied.value = false;
   }, 3000);
 };
 
@@ -26,8 +28,9 @@ async function copyEmail() {
   h2.section-title Contact
   p.mt-4.section-sub-title For any question you can cotact me at this email :
   h3.my-email-style.text-sm {{email}}
-    span(ref="copyIcon" @click="copyEmail" title="Copy to clipboard")
-      v-icon.ml-4.mt-4(icon="mdi-content-copy" size="small")     
+    span(ref="copyIcon" class="ml-4" @click="copyEmail" title="Copy to clipboard")
+      v-icon(v-if="email_coppied" icon="mdi-check" size="small")
+      v-icon(v-else icon="mdi-content-copy" size="small")
   p.mt-4.section-sub-title Or you can send me your message from here : 
 </template>
 <style scoped lang="scss">
