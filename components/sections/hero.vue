@@ -5,7 +5,7 @@ section.section-wrapper.flex.flex-col-reverse.gap-y-8.px-8
     br
     span.colored-words a software developer
     br
-    span.quote-text "turing tea (Atay) into code magic"
+    span.quote-text "Turing tea (Atay) into code magic"
   .img-wrapper
     .colored-border
       img.rounded-full.mx-auto(src="/images/hamza-profile.jpg" alt="Hamza's profile")
@@ -31,7 +31,7 @@ section.section-wrapper.flex.flex-col-reverse.gap-y-8.px-8
   @apply flex-center w-full;
 
   .colored-border {
-    @apply rounded-full w-52 p-1 md:p-2 md:w-64;
+    @apply rounded-full w-52 p-2 md:p-2.5 md:w-64;
     @apply bg-gradient-to-b from-app-primary to-app-secondary;
   }
 }

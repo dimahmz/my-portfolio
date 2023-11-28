@@ -5,11 +5,14 @@ section#skills.mt-20
     p.text-app-parag.text-sm.px-4 Technologies I've been working with recently
   .flex-center.mt-8
     .technologies-wrapper.w-full.mt-8.px-4.grid.grid-cols-3.gap-6
-      .mx-auto.w-full.flex-center(v-for="(modules , path  ) in technologies_svgs" )
-        img.w-full(:src="path.replace('/public', '')")
+      .mx-auto.w-full.flex-center(v-for="(technology  ) in technologies_svgs" )
+        .flex-column.align-center.space-y-4
+          img.w-full(:src="technology.path" :alt="technology.alt")
+          span {{ technology.title }}
+        
 </template>
 <script setup>
-const technologies_svgs = import.meta.glob("/public/svgs/technologies/*");
+import technologies_svgs from "@/content/technologies.json";
 </script>
 <style lang="scss" scoped>
 h2 {

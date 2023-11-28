@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Typescript",
+    "path": "/svgs/technologies/typescript-original.svg",
+    "alt": "typescript's logo"
+  },
+  {
+    "title": "Vuejs",
+    "path": "/svgs/technologies/vuejs-original.svg",
+    "alt": "vuejs's logo"
+  },
+  {
+    "title": "React",
+    "path": "/svgs/technologies/react-original.svg",
+    "alt": "react's logo"
+  },
+  {
+    "title": "Sass",
+    "path": "/svgs/technologies/sass-original.svg",
+    "alt": "sass's logo"
+  },
+  {
+    "title": "Tailwindcss",
+    "path": "/svgs/technologies/tailwindcss-plain.svg",
+    "alt": "tailwindcss's logo"
+  },
+  {
+    "title": "Graphql",
+    "path": "/svgs/technologies/graphql-plain.svg",
+    "alt": "graphql's logo"
+  },
+  {
+    "title": "Nodejs",
+    "path": "/svgs/technologies/nodejs-plain.svg",
+    "alt": "nodejs's logo'"
+  },
+  {
+    "title": "Symfony",
+    "path": "/svgs/technologies/symfony-original.svg",
+    "alt": "symfony's logo"
+  },
+  {
+    "title": "Laravel",
+    "path": "/svgs/technologies/laravel-plain.svg",
+    "alt": "laravel's logo"
+  },
+  {
+    "title": "MySql",
+    "path": "/svgs/technologies/mysql-plain.svg",
+    "alt": "mysql's logo"
+  },
+  {
+    "title": "Mongodb",
+    "path": "/svgs/technologies/mongodb-original.svg",
+    "alt": "mongodb's logo"
+  },
+  {
+    "title": "Firebase",
+    "path": "/svgs/technologies/firebase-plain.svg",
+    "alt": "firebase logo"
+  }
+]
