@@ -1,5 +1,5 @@
 <template lang="pug">
-v-btn(prepend-icon="mdi-download") Resume
+v-btn(prepend-icon="mdi-open-in-new") Resume
 </template>
 <style scoped>
 .v-btn {

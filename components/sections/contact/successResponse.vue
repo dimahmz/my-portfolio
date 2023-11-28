@@ -6,5 +6,4 @@ v-sheet.pa-8.text-center.mx-auto( max-width='400' rounded='lg' width='100%')
     | Thank you for message!
     br
     | I will answer you as soon as I can
-  v-divider.mb-4
 </template>

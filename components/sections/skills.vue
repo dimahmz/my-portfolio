@@ -1,5 +1,5 @@
 <template lang="pug">
-section.mt-20
+section#skills.mt-20
   div.text-center
     h2.text-app-title.text-xl.font-bold.mb-3 My Tech Stack
     p.text-app-parag.text-sm.px-4 Technologies I've been working with recently

@@ -18,7 +18,7 @@ function sendMessage() {
 }
 </script>
 <template lang="pug">
-section.px-3.mt-20
+section#contact.px-3.mt-20
   sections-contact-header
   .mt-4(v-if="serverResponse")
     error-response(v-if="responseError" v-model:show-error="serverResponse")
