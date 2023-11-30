@@ -2,17 +2,31 @@
   {
     "title": "promodoro-app",
     "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
-    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
+    "technologies": [
+      "Vuejs",
+      "Pinia",
+      "VueTify",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB"
+    ],
     "url": "https://pro-focus.vercel.app",
     "repoLink": "https://github.com/dimahmz/pro-focus",
     "imgPath": "images/projects/pro-pomodoro.png"
   },
   {
-    "title": "promodoro-app",
+    "title": "Restaurant web app",
     "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
-    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
-    "url": "https://pro-focus.vercel.app",
-    "repoLink": "https://github.com/dimahmz/pro-focus",
+    "technologies": [
+      "React",
+      "Redux",
+      "Material UI",
+      "TailwindCSS",
+      "Laravel",
+      "MySql"
+    ],
+    "url": "https://restaurant-web-app-mu.vercel.app/",
+    "repoLink": "https://github.com/dimahmz/restaurant-web-app.git",
     "imgPath": "images/projects/pro-pomodoro.png"
   },
   {

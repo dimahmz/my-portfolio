@@ -14,15 +14,14 @@ v-card.mx-auto
   v-img(:src='imgPath' cover)
   p.card-title.mt-4.text-center.text-app-link.font-semibold {{ title }}
   p.card-description.mt-2.px-3.text-xs.text-center.text-app-parag  {{ description }} 
-  .techs-section.flex.w-full.px-2.text-xs.mt-3
-    p.title.text-app-title.font-semibold.whitespace-nowrap Tech Stack :&nbsp;
-    .flex.space-x-2.flex-wrap.text-app-primary
-      p(v-for='technology in technologies') {{ technology }}
+  p.text-app-title.text-center.font-semibold.whitespace-nowrap.my-3 Built with :
+  .flex.justify-center.space-x-2.gap-y-2.flex-wrap.text-app-link.px-2
+    v-chip(size="small" variant="tonal" v-for='technology in technologies' ) {{ technology }}
   v-card-actions
     a(:href="url" target="_blank")
       v-icon(icon="mdi-link-variant")
       span.underline Live Preview
-    a(:href="url" target="_blank")
+    a(:href="repoLink" target="_blank")
       v-icon(icon="mdi-github")
       span.underline View Code 
     v-spacer
@@ -37,20 +36,15 @@ v-card.mx-auto
   .v-img {
     @apply md:h-[175px];
   }
-
+  .v-chip {
+    @apply cursor-text;
+  }
   .card-title {
     @apply md:text-lg md:font-black md:mt-5;
   }
   .card-description {
     @apply md:mt-3 md:text-sm;
   }
-  .techs-section {
-    @apply sm:text-sm;
-    .title {
-      @apply sm:font-bold;
-    }
-  }
-
   .v-card-actions {
     @apply px-1 flex-center;
     a {
