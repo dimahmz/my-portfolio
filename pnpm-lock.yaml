@@ -17,16 +17,16 @@ devDependencies:
     specifier: latest
     version: 1.0.4(nuxt@3.8.2)(vite@4.5.0)
   '@nuxtjs/google-fonts':
-    specifier: ^3.0.2
+    specifier: ^3.1.0
     version: 3.1.0
   '@vue/language-plugin-pug':
-    specifier: ^1.8.22
+    specifier: ^1.8.24
     version: 1.8.24
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
   nuxt:
-    specifier: ^3.8.0
+    specifier: ^3.8.2
     version: 3.8.2(sass@1.69.5)(vite@4.5.0)
   postcss:
     specifier: ^8.4.31
@@ -41,13 +41,13 @@ devDependencies:
     specifier: ^1.0.2
     version: 1.0.2(vite@4.5.0)(vue@3.3.9)(vuetify@3.4.4)
   vue:
-    specifier: ^3.3.7
+    specifier: ^3.3.9
     version: 3.3.9
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.3.9)
   vuetify:
-    specifier: ^3.4.0
+    specifier: ^3.4.4
     version: 3.4.4(vite-plugin-vuetify@1.0.2)(vue@3.3.9)
 
 packages:
@@ -4687,7 +4687,7 @@ packages:
       fast-glob: 3.3.2
       js-yaml: 4.1.0
       supports-color: 9.4.0
-      undici: 5.28.1
+      undici: 5.28.2
       yargs-parser: 21.1.1
     dev: true
 
@@ -5174,7 +5174,7 @@ packages:
     dependencies:
       postcss: 8.4.31
       postcss-value-parser: 4.2.0
-      svgo: 3.0.4
+      svgo: 3.0.5
     dev: true
 
   /postcss-unique-selectors@6.0.0(postcss@8.4.31):
@@ -5915,8 +5915,8 @@ packages:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
 
-  /svgo@3.0.4:
-    resolution: {integrity: sha512-T+Xul3JwuJ6VGXKo/p2ndqx1ibxNKnLTvRc1ZTWKCfyKS/GgNjRZcYsK84fxTsy/izr91g/Rwx6fGnVgaFSI5g==}
+  /svgo@3.0.5:
+    resolution: {integrity: sha512-HQKHEo73pMNOlDlBcLgZRcHW2+1wo7bFYayAXkGN0l/2+h68KjlfZyMRhdhaGvoHV2eApOovl12zoFz42sT6rQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -6096,8 +6096,8 @@ packages:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
 
-  /undici@5.28.1:
-    resolution: {integrity: sha512-xcIIvj1LOQH9zAL54iWFkuDEaIVEjLrru7qRpa3GrEEHk6OBhb/LycuUY2m7VCcTuDeLziXCxobQVyKExyGeIA==}
+  /undici@5.28.2:
+    resolution: {integrity: sha512-wh1pHJHnUeQV5Xa8/kyQhO7WFa8M34l026L5P/+2TYiakvGy5Rdc8jWZVyG7ieht/0WgJLEd3kcU5gKx+6GC8w==}
     engines: {node: '>=14.0'}
     dependencies:
       '@fastify/busboy': 2.1.0
