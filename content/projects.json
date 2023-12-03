@@ -1,7 +1,7 @@
 [
   {
     "title": "promodoro-app",
-    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
+    "description": "A web application that implements the pomodoro thechnique, with the ability to create taks and customize the timer.",
     "technologies": [
       "Vuejs",
       "Pinia",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Restaurant web app",
-    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
+    "description": "A restaurant web applicatioon for handing orders internally  and externally.",
     "technologies": [
       "React",
       "Redux",
@@ -27,14 +27,14 @@
     ],
     "url": "https://restaurant-web-app-mu.vercel.app/",
     "repoLink": "https://github.com/dimahmz/restaurant-web-app.git",
-    "imgPath": "images/projects/pro-pomodoro.png"
+    "imgPath": "images/projects/restaurant-web-app.png"
   },
   {
-    "title": "promodoro-app",
-    "description": "timer that will alert you when it's time to take a break or start a new Pomodoro session, so you can stay on track and achieve your goals.",
-    "technologies": ["VueJS", "vueTify", "nodeJS", "mongoDB"],
-    "url": "https://pro-focus.vercel.app",
-    "repoLink": "https://github.com/dimahmz/pro-focus",
-    "imgPath": "images/projects/pro-pomodoro.png"
+    "title": "Managment System",
+    "description": "Created a kids management systems for an association. Its suspports admin page for edit the data and member page for viewing the data",
+    "technologies": ["VueJS", "vueTify", "Typescript", "Laravel", "MySql"],
+    "url": "https://arrissala.vercel.app/",
+    "repoLink": "https://github.com/dimahmz/Arrissala-web-system.git",
+    "imgPath": "images/projects/manage-system.png"
   }
 ]

@@ -8,7 +8,7 @@ import projects from "@/content/projects.json";
     h2.section-title.mb-4 Projects
     p.section-sub-title Things I've build so far (featured)
   section.project-wrapper.mx-auto.mt-16.px-2.grid.grid-cols-1.gap-y-10
-    .flex-center(v-for="project  in projects" )
+    .flex-justify-center(v-for="project  in projects" )
       project-card(v-bind="project")
 </template>
 
