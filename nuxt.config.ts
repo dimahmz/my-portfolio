@@ -1,6 +1,10 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    emailUser: "",
+    emailPass: "",
+  },
   devtools: { enabled: true },
   build: {
     transpile: ["vuetify"],

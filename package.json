@@ -12,8 +12,10 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.1.0",
+    "@types/nodemailer": "^6.4.14",
     "@vue/language-plugin-pug": "^1.8.24",
     "autoprefixer": "^10.4.16",
+    "nodemailer": "^6.9.7",
     "nuxt": "^3.8.2",
     "postcss": "^8.4.31",
     "sass": "^1.69.5",
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",
+    "axios": "^1.6.2",
     "pug": "^3.0.2"
   }
 }
