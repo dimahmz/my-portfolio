@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "@pinia/nuxt",
     ["@nuxtjs/google-fonts", { families: { Poppins: true } }],
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {

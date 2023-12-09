@@ -1,19 +1,24 @@
 import axios from "axios";
-import type { serverResponseType } from "~/types/response";
+import type { serverResponse } from "~/types/response";
 
-async function sendMessage(
-  email: string,
-  name: string | null,
-  message: string
-): Promise<serverResponseType> {
+interface MessageType {
+  email: string;
+  name: string | null;
+  message: string;
+}
+
+async function sendMessage(message: MessageType): Promise<serverResponse> {
   // calling  the serverless
-  const response = await axios.post("/api/contact", {
-    email,
-    name,
-    message,
-  });
-
-  return response.data;
+  try {
+    const response = await axios.post("/api/contact", { ...message });
+    return response.data;
+  } catch (e: any) {
+    return {
+      success: false,
+      message: e.message,
+      payload: null,
+    };
+  }
 }
 
 export default sendMessage;

@@ -1,4 +1,4 @@
-export interface serverResponseType {
+export interface serverResponse {
   success: boolean;
   message: string;
   payload: any;

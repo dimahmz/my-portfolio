@@ -3,7 +3,7 @@ import sendEmail from "./_email";
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
-  const name = body.name,
+  const name = body.name || "(not specified)",
     message = body.message,
     email = body.email;
 

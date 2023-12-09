@@ -1,59 +1,31 @@
 <script lang="ts" setup>
-import { reactive } from "vue";
 import SuccessResponse from "./successResponse.vue";
 import errorResponse from "./errorResponse.vue";
-import sendMessage from "@/API/contact";
-import type { serverResponseType } from "@/types/response";
+import { useContactStore } from "@/stores/contact";
 
-const loading = ref(false);
-
-const serverResponse = ref(false);
-const responseError = ref(false);
-const responseSuccess = ref(false);
-
-const contact = reactive({
-  name: "",
-  email: "",
-  message: "",
-});
-
-async function submit() {
-  loading.value = true;
-
-  const response: serverResponseType = await sendMessage(
-    contact.email,
-    contact.name,
-    contact.message
-  );
-
-  loading.value = false;
-
-  if (!response.success) {
-    alert(response.message);
-    return;
-  }
-  serverResponse.value = true;
-  responseSuccess.value = true;
-}
+const contactStore = useContactStore();
 </script>
 <template lang="pug">
 section#contact.px-3.mt-20
   sections-contact-header
-  .mt-4(v-if="serverResponse")
-    error-response(v-if="responseError" v-model:show-error="serverResponse")
-    success-response(v-if="responseSuccess" )
+  .mt-4(v-if="contactStore.serverResponse")
+    error-response(v-if="contactStore.responseError" v-model:show-error="contactStore.serverResponse")
+    success-response(v-if="contactStore.responseSuccess" )
   .mt-16(v-else)
     p.text-center.mt-8.section-sub-title Or you can send me your message directly : 
-    form(@submit.prevent="submit")
-      v-text-field(label='name' v-model="contact.name" variant="outlined")
-      v-text-field(label='E-mail' v-model="contact.email" variant="outlined")
-      v-textarea(label='Message' v-model="contact.message" variant="outlined")
+    form(@submit.prevent="contactStore.sendToMyEmail")
+      v-text-field(label='name' v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
+      v-text-field(label='E-mail' v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
+      v-textarea(label='Message' v-model="contactStore.message" v-bind="contactStore.messageProps"  variant="outlined")
       .flex-center
-        v-btn(type='submit' :loading="loading" variant="tonal") send
+        v-btn(type='submit' :loading="contactStore.loading" variant="tonal") send
 </template>
 
 <style scoped lang="scss">
 form {
   @apply mt-8 mx-auto max-w-[600px];
+  .v-input {
+    @apply py-4;
+  }
 }
 </style>
