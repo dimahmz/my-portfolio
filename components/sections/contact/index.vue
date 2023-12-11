@@ -27,5 +27,9 @@ form {
   .v-input {
     @apply py-4;
   }
+  .v-btn {
+    @apply text-lg text-white px-10 tracking-widest;
+    @apply bg-gradient-to-r from-app-primary bg-transparent to-app-secondary;
+  }
 }
 </style>
