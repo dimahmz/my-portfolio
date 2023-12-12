@@ -22,8 +22,7 @@ nav-bar-mobile-drawer(v-model:drawer="drawer")
 
 <style lang="scss" scoped>
 .my-logo {
-  @apply transition-transform  text-[45px] font-black;
-  transform: rotateX(20deg) rotateY(20deg);
+  @apply transition-all text-[35px] font-black;
   &:hover {
     @apply rotate-0;
   }

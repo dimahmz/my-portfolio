@@ -31,6 +31,8 @@ export const useContactStore = defineStore("contcatStore", () => {
   const [message, messageProps] = defineField("message", vuetifyConfig);
 
   const sendToMyEmail = handleSubmit(async (values): Promise<void> => {
+    loading.value = true;
+
     const response = await sendMessage({
       email: values.email,
       name: values.name,
