@@ -9,7 +9,11 @@ const year = ref(new Date().getFullYear());
 .footer-text
     p.text-center.mt-3
       | built using
-      a.ml-2(:href='nuxt_link' target="_blank") nuxtJs
+      a.ml-2(:href='nuxt_link' target="_blank").underline Nuxt
+      | 
+      br
+      |
+      span.text-xs (without any love!)
     p.mt-4
       v-icon(icon="mdi-open-source-initiative")
       | &nbsp;{{year}}
