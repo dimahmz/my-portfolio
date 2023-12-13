@@ -30,7 +30,7 @@ export const useContactStore = defineStore("contcatStore", () => {
   const [email, emailProps] = defineField("email", vuetifyConfig);
   const [message, messageProps] = defineField("message", vuetifyConfig);
 
-  const sendToMyEmail = handleSubmit(async (values): Promise<void> => {
+  const sendToMyEmail = handleSubmit(async (values): Promise<boolean> => {
     loading.value = true;
 
     const response = await sendMessage({
@@ -42,10 +42,11 @@ export const useContactStore = defineStore("contcatStore", () => {
 
     if (!response.success) {
       alert(response.message);
-      return;
+      return false;
     }
     serverResponse.value = true;
     responseSuccess.value = true;
+    return true;
   });
 
   return {

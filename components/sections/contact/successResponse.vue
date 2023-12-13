@@ -1,5 +1,5 @@
 <template lang="pug">
-v-sheet.pa-8.text-center.mx-auto( max-width='400' rounded='lg' width='100%')
+v-sheet.py-18.pa-8.text-center.mx-auto( max-width='400' rounded='lg' width='100%')
   v-icon.mb-5(color='success' icon='mdi-check-circle' size='72')
   h2.text-h5.mb-6 You message Has been sent
   p.text-medium-emphasis.text-body-2

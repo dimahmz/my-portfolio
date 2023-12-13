@@ -17,7 +17,7 @@ header.flex-center.px-4.pt-7(class="sm:px-8 sm:py-4")
       buttons-resume
     div(class="sm:hidden")
       v-icon.text-app-parag(icon="mdi-menu" size="35" @click="toogleDrawer")
-nav-bar-mobile-drawer(v-model:drawer="drawer")
+nav-bar-mobile-drawer(v-model:drawer="drawer").overflow-hidden
 </template>
 
 <style lang="scss" scoped>
