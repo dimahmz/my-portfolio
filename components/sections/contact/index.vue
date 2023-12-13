@@ -2,6 +2,7 @@
 import SuccessResponse from "./successResponse.vue";
 import errorResponse from "./errorResponse.vue";
 import { useContactStore } from "@/stores/contact";
+import { ref } from "vue";
 
 const contactStore = useContactStore();
 
@@ -10,16 +11,16 @@ const responseSection = ref(null);
 async function contactMe() {
   const success = await contactStore.sendToMyEmail();
   if (success) {
-    responseSection.scrollIntoView({ behavior: "smooth" });
+    responseSection.value.scrollIntoView({ behavior: "smooth" });
   }
 }
 </script>
 <template lang="pug">
-section#contact.px-3.mt-20
+section#contact.px-3.mt-20(ref="responseSection")
   sections-contact-header
   .mt-4(v-if="contactStore.serverResponse")
     error-response(v-if="contactStore.responseError" v-model:show-error="contactStore.serverResponse")
-    success-response(ref="responseSection" v-if="contactStore.responseSuccess" )
+    success-response( v-if="contactStore.responseSuccess" )
   .mt-16(v-else)
     p.text-center.mt-8.section-sub-title Or you can send me your message directly : 
     form(@submit.prevent="contactMe")
