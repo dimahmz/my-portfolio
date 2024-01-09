@@ -35,7 +35,7 @@ section#contact.px-3.mt-20(ref="responseSection")
 form {
   @apply mt-8 mx-auto max-w-[600px];
   .v-input {
-    @apply py-4;
+    @apply py-2;
   }
   .v-btn {
     @apply text-lg text-white px-10 tracking-widest;

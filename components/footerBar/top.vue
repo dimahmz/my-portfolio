@@ -3,13 +3,13 @@ import socialMedia from "@/content/social-media.json";
 </script>
 
 <template lang="pug">
-.flex-center-between.py-6
+.flex-center-between.pt-10
   my-logo.my-logo
   .social-media.flex.space-x-1
     a(v-for="platform in socialMedia" :href="platform.link" target="_blank")
       span {{ platform.label }}
       v-icon(icon="mdi-arrow-top-right")
-hr.my-10.bg-app-parag
+hr.my-6.bg-app-parag
 </template>
 
 <style scoped lang="scss">
@@ -22,7 +22,7 @@ hr.my-10.bg-app-parag
   @apply sm:text-[26px] font-black;
 }
 hr {
-  @apply inline-block w-full h-[1.5px];
-  @apply md:my-40;
+  @apply inline-block w-full h-[1.5px] bg-[#bdc0c5];
+  @apply md:my-10;
 }
 </style>

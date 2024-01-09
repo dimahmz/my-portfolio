@@ -3,9 +3,9 @@ section.section-wrapper.flex.flex-col-reverse.gap-y-8.px-8
   p.hero-text.w-full.text-app-title.font-black.text-lg
     | Hello, I'm Hamza
     br
-    span.colored-words a software developer
+    span.colored-words a Software Developer
     br
-    span.quote-text "Turing tea (Atay) into code magic"
+    span.quote-text "Turing Atay (tea) into code magic"
   .img-wrapper
     .colored-border
       img.rounded-full.mx-auto(src="/images/hamza-profile.jpg" alt="Hamza's profile")
