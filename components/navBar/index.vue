@@ -14,7 +14,7 @@ header.flex-center.px-4.pt-7(class="sm:px-8 sm:py-4")
     div.hidden(class="sm:flex justify-between sm:space-x-4 md:space-x-10 lg:space-x-14")
       router-link(v-for="(link , i) in links" :key="i" :to="link.location") {{link.title}}
       a(href="https://medium.com/@essaadihamza4" target="_blank") Blogs
-      buttons-resume
+      //- buttons-resume
     div(class="sm:hidden")
       v-icon.text-app-parag(icon="mdi-menu" size="35" @click="toogleDrawer")
 nav-bar-mobile-drawer(v-model:drawer="drawer").overflow-hidden

@@ -25,6 +25,6 @@ div(class="sm:hidden")
             p.px-16.py-2.text-center.bg-app-background {{link.title}}
           p.px-16.py-2.text-center.bg-app-background
             a(href="https://medium.com/@essaadihamza4" target="_blank") Blogs
-        .flex-center
-          buttons-resume
+        //- .flex-center
+        //-   buttons-resume
 </template>
