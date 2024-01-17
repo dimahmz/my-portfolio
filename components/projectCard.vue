@@ -29,12 +29,12 @@ v-card.mx-auto
 
 <style lang="scss" scoped>
 .v-card {
-  @apply rounded-2xl max-w-[210px];
+  @apply bg-app-background rounded-2xl max-w-[190px];
   @apply sm:max-w-[230px];
   @apply md:max-w-[270px];
 
   .v-img {
-    @apply md:h-[175px];
+    @apply md:h-[135px];
   }
   .v-chip {
     @apply cursor-text;

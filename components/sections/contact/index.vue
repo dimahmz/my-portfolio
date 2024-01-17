@@ -34,6 +34,9 @@ section#contact.px-3.mt-20(ref="responseSection")
 <style scoped lang="scss">
 form {
   @apply mt-8 mx-auto max-w-[600px];
+  .v-text-field {
+    @apply text-app-link;
+  }
   .v-input {
     @apply py-2;
   }

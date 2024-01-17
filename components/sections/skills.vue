@@ -9,7 +9,7 @@ section#skills.mt-20
         .flex-column.justify-center.w-full.text-center.space-y-6
           .w-full
             img.w-full.mx-auto(:src="technology.path" :alt="technology.alt")
-          span.text-app-para.text-xs {{ technology.title }}
+          span.text-app-link.text-xs {{ technology.title }}
 </template>
 <script setup>
 import technologies_svgs from "@/content/technologies.json";

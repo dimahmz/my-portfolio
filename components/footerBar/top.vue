@@ -6,7 +6,7 @@ import socialMedia from "@/content/social-media.json";
 .flex-center-between.pt-10
   my-logo.my-logo
   .social-media.flex.space-x-1
-    a(v-for="platform in socialMedia" :href="platform.link" target="_blank")
+    a.text-app-link(v-for="platform in socialMedia" :href="platform.link" target="_blank")
       span {{ platform.label }}
       v-icon(icon="mdi-arrow-top-right")
 hr.my-6.bg-app-parag
