@@ -13,7 +13,7 @@ const year = ref(new Date().getFullYear());
       | 
       br
       |
-      span.text-xs.italic (without any love!)
+      span.text-xs.italic (with some love!)
     p.mt-4
       v-icon(icon="mdi-open-source-initiative")
       | &nbsp;{{year}}

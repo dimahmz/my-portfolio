@@ -1,9 +1,5 @@
 <script lang="ts" setup>
-import { onMounted, ref } from "vue";
-
-let check = ref(false);
-
-// change them function
+// change theme function
 function changeTheme() {
   const isDarktheme = document.documentElement.classList.contains("dark");
   if (isDarktheme) {
@@ -42,15 +38,12 @@ div
   justify-content: space-between;
   align-items: center;
 }
-
 .fa-moon {
   color: #f1c40f;
 }
-
 .fa-sun {
   color: #f39c12;
 }
-
 .checkbox-label .ball {
   @apply bg-app-surface;
   width: 22px;
@@ -59,7 +52,7 @@ div
   left: 4px;
   top: 4px;
   border-radius: 50%;
-  transition: transform 0.2s linear;
+  transition: transform 0.1s linear;
 }
 
 .checkbox:checked + .checkbox-label .ball {

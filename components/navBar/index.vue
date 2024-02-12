@@ -16,9 +16,9 @@ header.flex-center.px-4.pt-7(class="sm:px-8 sm:py-4")
       a(href="https://medium.com/@essaadihamza4" target="_blank") Blogs
       buttons-toggle-theme
       //- buttons-resume
-    div(class="sm:hidden")
-      v-icon.text-app-parag(icon="mdi-menu" size="35" @click="toogleDrawer")
-nav-bar-mobile-drawer(v-model:drawer="drawer").overflow-hidden
+    .menu-container(class="sm:hidden")
+      v-icon(icon="mdi-menu" size="35" @click="toogleDrawer")
+nav-bar-mobile-drawer(v-model:drawer="drawer")
 </template>
 
 <style lang="scss" scoped>
@@ -26,6 +26,11 @@ nav-bar-mobile-drawer(v-model:drawer="drawer").overflow-hidden
   @apply transition-all text-[35px] font-black;
   &:hover {
     @apply rotate-0;
+  }
+}
+.menu-container {
+  .v-icon {
+    @apply text-app-parag;
   }
 }
 </style>
