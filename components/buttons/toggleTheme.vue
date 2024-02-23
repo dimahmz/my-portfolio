@@ -24,6 +24,7 @@ div
 .checkbox {
   opacity: 0;
   position: absolute;
+  z-index: 10000;
 }
 
 .checkbox-label {

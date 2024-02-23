@@ -29,7 +29,7 @@ v-card.mx-auto
 
 <style lang="scss" scoped>
 .v-card {
-  @apply bg-app-background rounded-2xl max-w-[190px];
+  @apply bg-app-background rounded-2xl max-w-[260px];
   @apply sm:max-w-[230px];
   @apply md:max-w-[270px];
 

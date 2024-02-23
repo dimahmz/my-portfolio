@@ -12,3 +12,6 @@
 .gradian-text-color {
   @apply font-black bg-gradient-to-r from-app-primary to-app-secondary text-transparent bg-clip-text;
 }
+.gradian-bg-color {
+  @apply bg-gradient-to-r from-app-primary to-app-secondary text-transparent bg-clip-text;
+}

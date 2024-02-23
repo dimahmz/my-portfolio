@@ -24,8 +24,8 @@ const drawer = computed({
           router-link(v-for="(link , i) in links" :key="i" :to="link.location" )
             p.px-16.py-2.text-center {{link.title}}
           a.px-16.py-2.text-center(href="https://medium.com/@essaadihamza4" target="_blank") Blogs
-        div(class="z-[30]").flex.justify-center.relative
-          buttons-toggle-theme(class="relative z-[30]")
+        .flex.justify-center.relative
+          buttons-toggle-theme
 </template>
 
 <style lang="scss">

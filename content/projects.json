@@ -1,7 +1,7 @@
 [
   {
     "title": "promodoro-app",
-    "description": "A web app that implemebts the pomodoro thechnique, with the ability to create taks and customize the timer.",
+    "description": "A web app that implemebts the Pomodoro thechnique, with the ability to create taks and customize the timer.",
     "technologies": [
       "Vuejs",
       "Pinia",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Restaurant web app",
-    "description": "A restaurant web applicatioon for handing orders internally and externally.",
+    "description": "A restaurant web application for handing orders internally and externally.",
     "technologies": [
       "React",
       "Redux",
