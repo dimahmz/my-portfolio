@@ -1,17 +1,24 @@
 <script lang="ts" setup>
+import { storeToRefs } from "pinia";
+import { useAppStore } from "@/stores/app";
+
+const { themeBtnChecked } = storeToRefs(useAppStore());
 // change theme function
+
 function changeTheme() {
   const isDarktheme = document.documentElement.classList.contains("dark");
   if (isDarktheme) {
     document.documentElement.classList.remove("dark");
+    themeBtnChecked.value = false;
   } else {
     document.documentElement.classList.add("dark");
+    themeBtnChecked.value = true;
   }
 }
 </script>
 <template lang="pug">
 div
-  input(type="checkbox" class="checkbox" @change="changeTheme" id="checkbox")
+  input(type="checkbox" :checked="themeBtnChecked" class="checkbox" @change="changeTheme" id="checkbox")
   label(for="checkbox" class="checkbox-label")
     i(class="fas fa-moon")
       v-icon(size="small"  icon="mdi-moon-waning-crescent")

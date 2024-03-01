@@ -6,12 +6,13 @@ import { ref } from "vue";
 
 const contactStore = useContactStore();
 
-const responseSection = ref(null);
+const responseSection = ref(<null | HTMLElement>null);
 
 async function contactMe() {
   const success = await contactStore.sendToMyEmail();
   if (success) {
-    responseSection.value.scrollIntoView({ behavior: "smooth" });
+    if (responseSection.value)
+      responseSection.value.scrollIntoView({ behavior: "smooth" });
   }
 }
 </script>
@@ -24,9 +25,9 @@ section#contact.px-3.mt-20(ref="responseSection")
   .mt-16(v-else)
     p.text-center.mt-8.section-sub-title Or you can send me your message directly : 
     form(@submit.prevent="contactMe")
-      v-text-field(label='name' v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
-      v-text-field(label='E-mail' v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
-      v-textarea(label='Message' v-model="contactStore.message" v-bind="contactStore.messageProps"  variant="outlined")
+      v-text-field(label='name' size="x-small" v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
+      v-text-field(label='E-mail' size="x-small" v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
+      v-textarea(label='Message' size="x-small" v-model="contactStore.message" v-bind="contactStore.messageProps"  variant="outlined")
       .flex-center
         v-btn(type='submit' :loading="contactStore.loading" variant="tonal") send
 </template>
