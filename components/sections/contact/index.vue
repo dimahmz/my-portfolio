@@ -25,9 +25,9 @@ section#contact.px-3.mt-20(ref="responseSection")
   .mt-16(v-else)
     p.text-center.mt-8.section-sub-title Or you can send me your message directly : 
     form(@submit.prevent="contactMe")
-      v-text-field(label='name' size="x-small" v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
-      v-text-field(label='E-mail' size="x-small" v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
-      v-textarea(label='Message' size="x-small" v-model="contactStore.message" v-bind="contactStore.messageProps"  variant="outlined")
+      v-text-field(label='name' density="compact" v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
+      v-text-field(label='E-mail' density="compact" v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
+      v-textarea(label='Message' density="compact" v-model="contactStore.message" v-bind="contactStore.messageProps"  variant="outlined")
       .flex-center
         v-btn(type='submit' :loading="contactStore.loading" variant="tonal") send
 </template>
