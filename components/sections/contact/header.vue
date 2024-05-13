@@ -26,7 +26,7 @@ async function copyEmail() {
 <template lang="pug">
 .text-center
   h2.section-title Contact
-  p.mt-4.section-sub-title For any question you can cotact me at this email :
+  p.mt-4.section-sub-title Feel free to email me at
   h3.my-email-style.text-sm {{email}}
     span(ref="copyIcon" class="ml-4" @click="copyEmail" title="Copy to clipboard")
       v-icon(v-if="email_coppied" icon="mdi-check" size="small")

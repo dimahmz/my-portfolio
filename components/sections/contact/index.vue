@@ -23,7 +23,7 @@ section#contact.px-3.mt-20(ref="responseSection")
     error-response(v-if="contactStore.responseError" v-model:show-error="contactStore.serverResponse")
     success-response( v-if="contactStore.responseSuccess" )
   .mt-16(v-else)
-    p.text-center.mt-8.section-sub-title Or you can send me your message directly : 
+    p.text-center.mt-8.section-sub-title or simply drop me a message here. I'm always happy to help!
     form(@submit.prevent="contactMe")
       v-text-field(label='name' density="compact" v-model="contactStore.name" v-bind="contactStore.nameProps"  variant="outlined")
       v-text-field(label='E-mail' density="compact" v-model="contactStore.email" v-bind="contactStore.emailProps"  variant="outlined")
