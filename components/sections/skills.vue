@@ -5,14 +5,35 @@ section#skills.mt-20
     p.text-app-parag.text-sm.px-4 Technologies I've been working with recently
   .flex-center.mt-8
     .technologies-wrapper.w-full.mt-8.px-4.grid.grid-cols-3.gap-6
-      .mx-auto.w-full.flex-center(v-for="(technology  ) in technologies_svgs" )
+      .mx-auto.w-full.flex-center(v-for="(technology  ) in technologies.svgs" )
         .flex-column.justify-center.w-full.text-center.space-y-6
           .w-full
             img.w-full.mx-auto(:src="technology.path" :alt="technology.alt")
           span.text-app-link.text-xs {{ technology.title }}
 </template>
 <script setup>
+import { onMounted } from "vue";
+import { storeToRefs } from "pinia";
+import { useAppStore } from "@/stores/app";
 import technologies_svgs from "@/content/technologies.json";
+
+const technologies = reactive({ svgs: technologies_svgs.darkTheme });
+const { themeBtnChecked } = storeToRefs(useAppStore());
+
+onMounted(() => {
+  changeSVGs();
+});
+
+watch(themeBtnChecked, () => {
+  changeSVGs();
+});
+
+function changeSVGs() {
+  const isDarktheme = document.documentElement.classList.contains("dark");
+  
+  if (isDarktheme) technologies.svgs = technologies_svgs.darkTheme;
+  else technologies.svgs = technologies_svgs.ligthTheme;
+}
 </script>
 <style lang="scss" scoped>
 h2 {
