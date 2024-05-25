@@ -1,7 +1,7 @@
 [
   {
-    "title": "promodoro-app",
-    "description": "A web app that implemebts the Pomodoro thechnique, with the ability to create taks and customize the timer.",
+    "title": "Pomodoro Web App",
+    "description": "A web app that implements the Pomodoro thechnique, with the ability to create taks and customize the timer.",
     "technologies": [
       "Vuejs",
       "Pinia",
@@ -32,7 +32,7 @@
   {
     "title": "Managment System",
 
-    "description": "Developed a managment system for a non-profit organization, optimizing child and guardian management.",
+    "description": "Developed a role based managment system for a non-profit organization, optimizing child and guardian management.",
     "technologies": ["VueJS", "VueTify", "Typescript", "Laravel", "MySql"],
     "url": "https://arrissala.vercel.app/",
     "repoLink": "https://github.com/dimahmz/Arrissala-web-system.git",
