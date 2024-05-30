@@ -1,7 +1,7 @@
 {
   "darkTheme": [
     {
-      "title": "Typescriptdark",
+      "title": "Typescript",
       "path": "/svgs/technologies/typescript-original.svg",
       "alt": "typescript's logo"
     },
@@ -63,7 +63,7 @@
   ],
   "ligthTheme": [
     {
-      "title": "TypescriptLigth",
+      "title": "Typescript",
       "path": "/svgs/technologies/typescript-original.svg",
       "alt": "typescript's logo"
     },
