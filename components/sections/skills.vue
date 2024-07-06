@@ -17,11 +17,19 @@ import { storeToRefs } from "pinia";
 import { useAppStore } from "@/stores/app";
 import technologies_svgs from "@/content/technologies.json";
 
-const technologies = reactive({ svgs: technologies_svgs.darkTheme });
+const technologies = reactive({ svgs: technologies_svgs.ligthTheme });
 const { themeBtnChecked } = storeToRefs(useAppStore());
 
 onMounted(() => {
-  changeSVGs();
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    technologies.svgs = technologies_svgs.darkTheme;
+  } else {
+    technologies.svgs = technologies_svgs.ligthTheme;
+  }
 });
 
 watch(themeBtnChecked, () => {
@@ -30,7 +38,7 @@ watch(themeBtnChecked, () => {
 
 function changeSVGs() {
   const isDarktheme = document.documentElement.classList.contains("dark");
-  
+
   if (isDarktheme) technologies.svgs = technologies_svgs.darkTheme;
   else technologies.svgs = technologies_svgs.ligthTheme;
 }

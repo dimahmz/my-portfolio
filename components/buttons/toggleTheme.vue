@@ -10,7 +10,9 @@ function changeTheme() {
   if (isDarktheme) {
     document.documentElement.classList.remove("dark");
     themeBtnChecked.value = false;
+    localStorage.theme = 'light'
   } else {
+    localStorage.theme = 'dark'
     document.documentElement.classList.add("dark");
     themeBtnChecked.value = true;
   }
