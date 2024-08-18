@@ -1,26 +1,24 @@
 <script lang="ts" setup>
 import { storeToRefs } from "pinia";
 import { useAppStore } from "@/stores/app";
+import { onMounted } from "vue";
 
-const { themeBtnChecked } = storeToRefs(useAppStore());
+const { themeBtnToggeledToDark } = storeToRefs(useAppStore());
+const appStore = useAppStore();
+
 // change theme function
 
 function changeTheme() {
-  const isDarktheme = document.documentElement.classList.contains("dark");
-  if (isDarktheme) {
-    document.documentElement.classList.remove("dark");
-    themeBtnChecked.value = false;
-    localStorage.theme = "light";
-  } else {
-    localStorage.theme = "dark";
-    document.documentElement.classList.add("dark");
-    themeBtnChecked.value = true;
-  }
+  appStore.togglePageTheme()
 }
+
+onMounted(() => {
+  if(appStore.isPageShouldBeInDarkMode()) themeBtnToggeledToDark.value = true;
+});
 </script>
 <template lang="pug">
 div
-  input(type="checkbox" :checked="themeBtnChecked" class="checkbox" @change="changeTheme" id="checkbox")
+  input(type="checkbox" :checked="themeBtnToggeledToDark" class="checkbox" @change="changeTheme" id="checkbox")
   label(for="checkbox" class="checkbox-label")
     i(class="fas fa-moon")
       v-icon(size="small"  icon="mdi-moon-waning-crescent")
